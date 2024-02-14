@@ -41,10 +41,21 @@ st.markdown("**Data analyst | Dev | Graphic Designer**")
 st.write("###")
 col1, col2, col3, col4 = st.columns(4)
 
-col1.button('LinkedIn', 'https://www.linkedin.com/in/john-ndelembi/')
-col2.button('Github', 'https://github.com/dashboard', 'Github', 'icon_size')
-col3.button('Twitter', 'https://twitter.com/Johnwills171', 'Twitter', 'icon_size')
-col4.button('Portfolio', 'https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q', 'Twitter', 'icon_size')
+link = '[LinkedIn](https://www.linkedin.com/in/john-ndelembi/)'
+col1.markdown(link, unsafe_allow_html=True)
+
+link1 = '[Github](https://github.com/dashboard)'
+col2.markdown(link1, unsafe_allow_html=True)
+
+link2 = '[Twitter](https://twitter.com/Johnwills171)'
+col3.markdown(link2, unsafe_allow_html=True)
+
+link3 = '[Portfolio](https://tome.app/fx-3c4/johns-portfolio-cllaidgc700wkoe5qqmitxx1q)'
+col4.markdown(link3, unsafe_allow_html=True)
+
+
+
+
 st.write("---")
 
 st.subheader(" :green[PROFILE] ")
@@ -98,9 +109,16 @@ st.markdown('''
 st.write("###")
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
-st.page_link(("https://dataproject.streamlit.app/"), label=':trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects')
-st.page_link(("https://dataproject.streamlit.app/"), label=' :trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code')
-st.page_link(("https://tally.so/r/n0dEVQ"), label=' :trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times' )
+
+link4 = '[:trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects](https://dataproject.streamlit.app/)'
+st.markdown(link4, unsafe_allow_html=True)
+
+link5 = '[:trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code](https://dataproject.streamlit.app/)'
+st.markdown(link5, unsafe_allow_html=True )
+
+link6 = '[:trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times](https://tally.so/r/n0dEVQ)'
+st.markdown(link6, unsafe_allow_html=True)
+
 st.write("---")
 
 
