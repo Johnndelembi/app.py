@@ -21,6 +21,15 @@ st.sidebar.markdown('''
     - Graphic Design and Videography
     - Marketting Content Creation''')
 
+st.sidebar.write(" ###")
+st.sidebar.header("**SOFT SKILLS**")
+st.sidebar.markdown('''
+    - Communication and Problem solving skills
+    - Team work, collaboration and adaptability
+    - Microsoft office packages. 
+    - Proposal Writing. ''')
+
+
 st.sidebar.write("###")
 st.sidebar.header("**LANGUAGE**")
 st.sidebar.write('''
@@ -107,6 +116,18 @@ st.markdown('''
     - Participated and worked in Campus held AIESEC events''')
 
 st.write("###")
+
+st.subheader(":blue[EDUCATION AND TRAINING]")
+st.write("**:blue[University of Dar es Salaam]** | B.A in Economics and Statisitcs")
+st.write(" *November 2021 - September 2023*")
+st.markdown('''
+    - Leadership skills
+    - Learned Economics, Statistics Principles''')
+
+st.write("**:blue[MSUFINI HIGH SCHOOL]** , Hai - Kilimanjaro")
+st.write(" *April 2020 - May 2021*")
+st.write('''
+         - EGM - Economics, Geography and Mathematics''')
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
 
