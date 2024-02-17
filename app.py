@@ -102,33 +102,39 @@ st.write("###")
 st.write(" :orange[ENNOVATE VENTURES], Dar es Salaam")
 st.write("April 2023 - June 2023")
 st.markdown('''
-    - Worked as a developer tasked to design a web app with the aim to solve a problem in the community
-    - Completed the task by 90% and submitted the project on time''')
+    ✔ Worked as a developer tasked to design a web app with the aim to solve a problem in the community
+    
+    ✔ Completed the task by 90% and submitted the project on time''')
 
 st.subheader(" :red[WORK EXPERIENCE] ")
 st.write(" :red[EVERYDAY MANIFESTATIONS],  *Dar es Salaam — C.E.O Personal Assistant*")
 st.markdown("April 2022 - July 2022")
 st.markdown('''
-    - Worked with the C.E.O in launching multiple marketing campaigns. 
-    - Performed 65% of back office activities of the company.''')
+    ✔ Worked with the C.E.O in launching multiple marketing campaigns. 
+    
+    ✔ Performed 65% of back office activities of the company.''')
 
 st.write("###")    
 
 st.write(" :red[BRENDALICIOUS FRESH JUICE],  *Mbeya — Business analyst, Graphics designer.*")
 st.markdown("December 2022 - January 2023")
 st.markdown('''
-    - Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
-    - Worked as an assistant social media manager, ran considerable number of online based marketing campaigns.
-    - Established a stable system for business flow and operations.''')
+    ✔ Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
+    
+    ✔ Worked as an assistant social media manager, ran considerable number of online based marketing campaigns.
+    
+    ✔ Established a stable system for business flow and operations.''')
 
 st.write("###")
 
 st.write(" :red[AIESEC IN UDSM], *Dar es Salaam -- Team member of Business and Patners development department*")
 st.markdown("June 2023 - Present")
 st.markdown('''
-    - Participated in organizing AIESEC International Relations event with EwA members
-    - Worked towards patnerships establishment for specific AIESEC Events and  for the entity at large
-    - Participated and worked in Campus held AIESEC events''')
+    ✔ Participated in organizing AIESEC International Relations event with EwA members
+    
+    ✔ Worked towards patnerships establishment for specific AIESEC Events and  for the entity at large
+    
+    ✔ Participated and worked in Campus held AIESEC events''')
 
 st.write("###")
 
@@ -136,13 +142,14 @@ st.subheader(":blue[EDUCATION AND TRAINING]")
 st.write("**:blue[University of Dar es Salaam]** | B.A in Economics and Statisitcs")
 st.write(" *November 2021 - September 2023*")
 st.markdown('''
-    - Leadership skills
-    - Learned Economics, Statistics Principles''')
+    ✔ Leadership skills
+    
+    ✔ Learned Economics, Statistics Principles''')
 
 st.write("**:blue[MSUFINI HIGH SCHOOL]** , Hai - Kilimanjaro")
 st.write(" *April 2020 - May 2021*")
 st.write('''
-         - EGM - Economics, Geography and Mathematics''')
+         ✔ EGM - Economics, Geography and Mathematics''')
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
 
