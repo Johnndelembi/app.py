@@ -57,7 +57,7 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 st.title(" :green[JOHN NDELEMBI] ")
 st.markdown("**Data analyst | Dev | Graphic Designer**")
 st.download_button(
-    label="Download CV.pdf",
+    label="📝 Download CV.pdf",
     data=PDFbyte,
     file_name=resume_file.name,
     mime="application/octet-stream",
