@@ -92,9 +92,9 @@ st.subheader(" :orange[VOLUNTEER EXPERIENCE] ")
 st.write(" :orange[PSSSF], *Geita*")
 st.write("July 2023 - September 2023")
 st.markdown('''
-    -✔️  Participated in PSSSF volunteer training of the institution
-    -✔️  Assisted in operations department office work
-    -✔️  Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
+    ✔ Participated in PSSSF volunteer training of the institution
+    ✔ Assisted in operations department office work
+    ✔ Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
 
 st.write("###")
 st.write(" :orange[ENNOVATE VENTURES], Dar es Salaam")
