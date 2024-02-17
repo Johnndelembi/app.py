@@ -11,7 +11,7 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.set_page_config(
-    page_title="CV",
+    page_title="JOHN NDELEMBI CV",
     page_icon=":brain:",
     )
 
