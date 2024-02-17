@@ -52,7 +52,7 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 #------------------PAGE SETUP---------------
 
 st.title(" :green[JOHN NDELEMBI] ")
-st.sidebar.markdown(" > **'Data analyst asissting enterprises and organizations by supporting data-driven decsisions towards growth'**")
+st.sidebar.markdown(**'Data analyst asissting enterprises and organizations by supporting data-driven decsisions towards growth'**)
 st.download_button(
     label="📝 Download CV.pdf",
     data=PDFbyte,
