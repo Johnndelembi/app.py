@@ -12,7 +12,7 @@ with open(resume_file, "rb") as pdf_file:
 
 st.set_page_config(
     page_title="JOHN NDELEMBI CV",
-    page_icon=":brain:",
+    page_icon=" 📄 ",
     )
 
 #---------------SIDEBAR--------------------------
