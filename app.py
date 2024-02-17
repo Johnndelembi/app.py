@@ -1,4 +1,14 @@
 import streamlit as st
+from pathlib import Path
+
+#-------------PATH SETTINGS------------
+
+current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+resume_file = current_dir / "resume.pdf"
+
+#------------LOAD FILE----------------
+with open(resume_file, "rb") as pdf_file: 
+    PDFbyte = pdf_file.read()
 
 st.set_page_config(
     page_title="CV",
@@ -24,10 +34,10 @@ st.sidebar.markdown('''
 st.sidebar.write(" ###")
 st.sidebar.header("**SOFT SKILLS**")
 st.sidebar.markdown('''
-    - Communication and Problem solving skills.
-    - Team work, collaboration and adaptability.
+    - Communication and Problem solving skills
+    - Team work, collaboration and adaptability
     - Microsoft office packages. 
-    - Proposal Writing.''')
+    - Proposal Writing. ''')
 
 
 st.sidebar.write("###")
@@ -46,6 +56,12 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 st.title(" :green[JOHN NDELEMBI] ")
 st.markdown("**Data analyst | Dev | Graphic Designer**")
+st.download_button(
+    label="Download CV.pdf",
+    data=PDFbyte,
+    file_name=resume_file.name,
+    mime="application/octet-stream",
+)
 
 st.write("###")
 col1, col2, col3, col4 = st.columns(4)
@@ -122,12 +138,12 @@ st.write("**:blue[University of Dar es Salaam]** | B.A in Economics and Statisit
 st.write(" *November 2021 - September 2023*")
 st.markdown('''
     - Leadership skills
-    - Learned Economics, Statistics Principles ''')
+    - Learned Economics, Statistics Principles''')
 
 st.write("**:blue[MSUFINI HIGH SCHOOL]** , Hai - Kilimanjaro")
 st.write(" *April 2020 - May 2021*")
 st.write('''
-         - EGM - Economics, Geography and Mathematics ''')
+         - EGM - Economics, Geography and Mathematics''')
 
 st.subheader("PROJECTS AND ACCOMPLISHMENTS")
 
