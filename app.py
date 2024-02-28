@@ -15,6 +15,25 @@ st.set_page_config(
     page_icon="📄",
     )
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://images.unsplash.com/photo-1576806817362-9ed6edf33591?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+}
+
+[data-testid="stHeader"] {
+background-color: rgba(0, 0, 0, 0);
+}
+
+[data-testid="stToolbar"] {
+right: 1rem;
+}
+
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 #---------------SIDEBAR--------------------------
 
 st.sidebar.image("picc.png", width=200)
@@ -54,7 +73,7 @@ st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 st.title(" :green[JOHN NDELEMBI] ")
 st.markdown("**Data analyst asissting enterprises and organizations by supporting data-driven decisions helping organizations navigate the data landscape and achieve their full potential.**")
 st.download_button(
-    label="📝 Download CV.pdf",
+    label="📝 Download CV",
     data=PDFbyte,
     file_name=resume_file.name,
     mime="application/octet-stream",
@@ -82,8 +101,8 @@ st.write("---")
 
 st.subheader(" :green[PROFILE] ")
 st.markdown(''' 
-    > I have 2 years of experience working with data, strong hands on experience with Python, Excell and STATA. I have completed 4 data science projects with an 85% efficiency in my lifetime. I have good understanding of statistics principles and their respective applications. I am a hard worker with a team-work oriented mindset. data driven decision-maker
-    It would be an honor to work under your organization/company and drive growth with data driven decision.''')
+    *I have 2 years of experience working with data, strong hands on experience with Python, Excell and STATA. I have completed 4 data science projects with an 85% efficiency in my lifetime. I have good understanding of statistics principles and their respective applications. I am a hard worker with a team-work oriented mindset. data driven decision-maker
+    It would be an honor to work under your organization/company and drive growth with data driven decision.*''')
 
 st.write("###")
 
