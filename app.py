@@ -108,7 +108,7 @@ st.write("###")
 
 st.subheader(" :blue[VOLUNTEER EXPERIENCE] ")
 
-st.write(" :blue[PSSSF], *Geita*")
+st.write(" **:blue[PSSSF]**, *Geita*")
 st.write("July 2023 - September 2023")
 st.markdown('''
     ✔ Participated in PSSSF volunteer training of the institution
@@ -118,7 +118,7 @@ st.markdown('''
     ✔ Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
 
 st.write("###")
-st.write(" :blue[ENNOVATE VENTURES], Dar es Salaam")
+st.write(" **:blue[ENNOVATE VENTURES]**, Dar es Salaam")
 st.write("April 2023 - June 2023")
 st.markdown('''
     ✔ Worked as a developer tasked to design a web app with the aim to solve a problem in the community
@@ -135,7 +135,7 @@ st.markdown('''
 
 st.write("###")    
 
-st.write(" :blue[BRENDALICIOUS FRESH JUICE],  *Mbeya — Business analyst, Graphics designer.*")
+st.write(" **:blue[BRENDALICIOUS FRESH JUICE]**,  *Mbeya — Business analyst, Graphics designer.*")
 st.markdown("December 2022 - January 2023")
 st.markdown('''
     ✔ Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
@@ -146,7 +146,7 @@ st.markdown('''
 
 st.write("###")
 
-st.write(" :blue[AIESEC IN UDSM], *Dar es Salaam -- Team member of Business and Patners development department*")
+st.write(" **:blue[AIESEC IN UDSM]**, *Dar es Salaam -- Team member of Business and Patners development department*")
 st.markdown("June 2023 - Present")
 st.markdown('''
     ✔ Participated in organizing AIESEC International Relations event with EwA members
