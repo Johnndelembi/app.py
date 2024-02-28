@@ -125,8 +125,8 @@ st.markdown('''
     
     ✔ Completed the task by 90% and submitted the project on time''')
 
-st.subheader(" :red[WORK EXPERIENCE] ")
-st.write(" :red[EVERYDAY MANIFESTATIONS],  *Dar es Salaam — C.E.O Personal Assistant*")
+st.subheader(" :blue[WORK EXPERIENCE] ")
+st.write(" **:blue[EVERYDAY MANIFESTATIONS]**,  *Dar es Salaam — C.E.O Personal Assistant*")
 st.markdown("April 2022 - July 2022")
 st.markdown('''
     ✔ Worked with the C.E.O in launching multiple marketing campaigns. 
