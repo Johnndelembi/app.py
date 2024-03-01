@@ -178,8 +178,13 @@ st.markdown(link4, unsafe_allow_html=True)
 link5 = '[:trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code](https://dataproject.streamlit.app/)'
 st.markdown(link5, unsafe_allow_html=True )
 
-link6 = '[:trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times](https://tally.so/r/n0dEVQ)'
+link6 = '[:trophy: **RADOKI STATISTICS SOLUTIONS** - created the web application UI and helped perfom activities as a data analyst in the organization](https://radoki.streamlit.app/)'
 st.markdown(link6, unsafe_allow_html=True)
+
+link7 = '[:trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times](https://tally.so/r/n0dEVQ)'
+st.markdown(link7, unsafe_allow_html=True)
+
+
 
 st.write("---")
 
