@@ -11,14 +11,15 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.set_page_config(
-    page_title="JOHN NDELEMBI CV",
-    page_icon="📄",
+    page_title="CV",
+    page_icon=":brain:",
     )
+
 
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://images.unsplash.com/photo-1576806817362-9ed6edf33591?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+background-image: url("headphone.jpg")
 }
 
 [data-testid="stHeader"] {
@@ -29,6 +30,10 @@ background-color: rgba(0, 0, 0, 0);
 right: 1rem;
 }
 
+[data-testid="stSidebar"] {    
+background-image: url("")
+}
+
 </style>
 """
 
@@ -36,44 +41,60 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 #---------------SIDEBAR--------------------------
 
-st.sidebar.image("picc.png", width=200)
+with st.sidebar:
+    container = st.container(border=True)
+    st.image("picc.png", width=200)
+    #st.write("###")
+    #st.markdown(" > **Data analyst asisting enterprises and organizations by supporting data driven decsisions towards growth**")
 
-st.sidebar.write("###")
-st.sidebar.header("**HARD SKILLS**")
-st.sidebar.markdown('''
-    - Data Management & Analysis (Competent in Python,R,STATA and Excell)
-    - Python Programming for Web app designs and development
-    - 3D Rendering (Beginners level)
+with st.sidebar:
+    container = st.container(border=True)
+    #container.write("###")
+    container.header("**HARD SKILLS**")
+    container.markdown('''
+    - Data Analysis
+    - Machine Learning
+    - Web development
+    - 3D Rendering. 
     - Graphic Design and Videography
     - Marketting Content Creation''')
 
-st.sidebar.write(" ###")
-st.sidebar.header("**SOFT SKILLS**")
-st.sidebar.markdown('''
-    - Communication and Problem solving skills
-    - Team work, collaboration and adaptability
+with st.sidebar:
+    container = st.container(border=True)
+    #st.sidebar.write(" ###")
+    container.header("**SOFT SKILLS**")
+    container.markdown('''
     - Microsoft office packages. 
-    - Proposal Writing. ''')
+    - Proposal Writing.
+    - Communication skills 
+    - Problem solving skills
+    - Team work and adaptability
+     ''')
 
-
-st.sidebar.write("###")
-st.sidebar.header("**LANGUAGE**")
-st.sidebar.write('''
+with st.sidebar:
+    container = st.container(border=True)
+    #st.sidebar.write("###")
+    container.header("**LANGUAGE**")
+    container.write('''
     - Swahili 
     - English (Written & Spoken)''')
 
-st.sidebar.subheader("CONTACT ME")
-st.sidebar.markdown(":telephone_receiver:(+255) 625 232 734")
-st.sidebar.write((":envelope: williamjohnie61@gmail.com"))
-st.sidebar.markdown(":round_pushpin: Dar es Salaam, Tanzania")
+with st.sidebar:
+    container = st.container(border=True)
+    container.header("CONTACTS")
+    container.markdown(":telephone_receiver:(+255) 625 232 734")
+    container.write((":envelope: williamjohnie61@gmail.com"))
+    container.markdown(":round_pushpin: Dar es Salaam, Tanzania")
 
 
 #------------------PAGE SETUP---------------
 
-st.title(" :green[JOHN NDELEMBI] ")
-st.markdown("**Data analyst asissting enterprises and organizations by supporting data-driven decisions helping organizations navigate the data landscape and achieve their full potential.**")
+st.title(" :green[JOHN NDELEMBI] :crown: ")
+#st.markdown("**Data Scientist | Developer | Graphic Designer**")
+st.markdown("**Data Analyst. Developer advocate at Py.Hub. Python instructor at Py.Hub. Data enthusiat supporting data-driven decisions.**")
+
 st.download_button(
-    label="📝 Download CV",
+    label="Download CV",
     data=PDFbyte,
     file_name=resume_file.name,
     mime="application/octet-stream",
@@ -106,54 +127,46 @@ st.markdown('''
 
 st.write("###")
 
-st.subheader(" :blue[VOLUNTEER EXPERIENCE] ")
+st.subheader(" :orange[VOLUNTEER EXPERIENCE] ")
 
-st.write(" **:blue[PSSSF]**, *Geita*")
+st.write(" :orange[PSSSF], *Geita*")
 st.write("July 2023 - September 2023")
 st.markdown('''
-    ✔ Participated in PSSSF volunteer training of the institution
-    
-    ✔ Assisted in operations department office work
-    
-    ✔ Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
+    - Participated in PSSSF volunteer training of the institution
+    - Assisted in operations department office work
+    - Worked with Excell spreadsheets of members perfoming data wrangling and missing values treatment ''')
 
 st.write("###")
-st.write(" **:blue[ENNOVATE VENTURES]**, Dar es Salaam")
+st.write(" :orange[ENNOVATE VENTURES], Dar es Salaam")
 st.write("April 2023 - June 2023")
 st.markdown('''
-    ✔ Worked as a developer tasked to design a web app with the aim to solve a problem in the community
-    
-    ✔ Completed the task by 90% and submitted the project on time''')
+    - Worked as a developer tasked to design a web app with the aim to solve a problem in the community
+    - Completed the task by 90% and submitted the project on time''')
 
-st.subheader(" :blue[WORK EXPERIENCE] ")
-st.write(" **:blue[EVERYDAY MANIFESTATIONS]**,  *Dar es Salaam — C.E.O Personal Assistant*")
+st.subheader(" :red[WORK EXPERIENCE] ")
+st.write(" :red[EVERYDAY MANIFESTATIONS],  *Dar es Salaam — C.E.O Personal Assistant*")
 st.markdown("April 2022 - July 2022")
 st.markdown('''
-    ✔ Worked with the C.E.O in launching multiple marketing campaigns. 
-    
-    ✔ Performed 65% of back office activities of the company.''')
+    - Worked with the C.E.O in launching multiple marketing campaigns. 
+    - Performed 65% of back office activities of the company.''')
 
 st.write("###")    
 
-st.write(" **:blue[BRENDALICIOUS FRESH JUICE]**,  *Mbeya — Business analyst, Graphics designer.*")
+st.write(" :red[BRENDALICIOUS FRESH JUICE],  *Mbeya — Business analyst, Graphics designer.*")
 st.markdown("December 2022 - January 2023")
 st.markdown('''
-    ✔ Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
-    
-    ✔ Worked as an assistant social media manager, ran considerable number of online based marketing campaigns.
-    
-    ✔ Established a stable system for business flow and operations.''')
+    - Helped in re-establishing the the company into the business world by making better decisions in marketing and sales department which brought about the growth of the company by 75% from before i started working with.
+    - Worked as an assistant social media manager, ran considerable number of online based marketing campaigns.
+    - Established a stable system for business flow and operations.''')
 
 st.write("###")
 
-st.write(" **:blue[AIESEC IN UDSM]**, *Dar es Salaam -- Team member of Business and Patners development department*")
+st.write(" :red[AIESEC IN UDSM], *Dar es Salaam -- Team member of Business and Patners development department*")
 st.markdown("June 2023 - Present")
 st.markdown('''
-    ✔ Participated in organizing AIESEC International Relations event with EwA members
-    
-    ✔ Worked towards patnerships establishment for specific AIESEC Events and  for the entity at large
-    
-    ✔ Participated and worked in Campus held AIESEC events''')
+    - Participated in organizing AIESEC International Relations event with EwA members
+    - Worked towards patnerships establishment for specific AIESEC Events and  for the entity at large
+    - Participated and worked in Campus held AIESEC events''')
 
 st.write("###")
 
@@ -161,37 +174,65 @@ st.subheader(":blue[EDUCATION AND TRAINING]")
 st.write("**:blue[University of Dar es Salaam]** | B.A in Economics and Statisitcs")
 st.write(" *November 2021 - September 2023*")
 st.markdown('''
-    ✔ Leadership skills
-    
-    ✔ Learned Economics, Statistics Principles''')
+    - Leadership skills
+    - Learned Economics, Statistics Principles''')
 
 st.write("**:blue[MSUFINI HIGH SCHOOL]** , Hai - Kilimanjaro")
 st.write(" *April 2020 - May 2021*")
 st.write('''
-         ✔ EGM - Economics, Geography and Mathematics''')
+         - EGM - Economics, Geography and Mathematics''')
 
-st.subheader("PROJECTS AND ACCOMPLISHMENTS")
+col7, col8 = st.columns([0.5,5])
+col8.header("PROJECTS AND ACCOMPLISHMENTS")
 
-link4 = '[:trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects](https://dataproject.streamlit.app/)'
-st.markdown(link4, unsafe_allow_html=True)
+c1, c2, c3 = st.columns(3)
 
-link5 = '[:trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code](https://dataproject.streamlit.app/)'
-st.markdown(link5, unsafe_allow_html=True )
+c1.metric(label="Completed", value="5", delta="1")
+c2.metric(label="Currently Working on", value="2", delta="1")
+c3.metric(label="Declined", value="0", delta="-5")
 
-link6 = '[:trophy: **RADOKI STATISTICS SOLUTIONS** - created the web application UI and helped perfom activities as a data analyst in the organization](https://radoki.streamlit.app/)'
-st.markdown(link6, unsafe_allow_html=True)
+#style_metric_cards(border_left_color="#1E1E1E")
 
-link7 = '[:trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times](https://tally.so/r/n0dEVQ)'
-st.markdown(link7, unsafe_allow_html=True)
+with st.expander("PROJECTS AND ACCOMPLISHMENTS"):
+    proj1, proj2 = st.columns(2)
+    container = st.container(border=False)
 
+    with st.container():
+        proj1.video("academic.webm")  
+        proj1.caption("Academic results analysis")
+        proj1.write("###") 
+        proj1.write("###")
+        link4 = '[:trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects](https://dataproject.streamlit.app/)'
+        proj2.markdown(link4, unsafe_allow_html=True)
+        proj2.markdown("I workshopped a data dashboard presenting data from examination results of diploma students from a certain university(name reserved) in year 2021/2022 and highlighted the basic statistics analytical oroceedures ")
+        proj2.write("###")
+        proj1.write("###")
+        proj2.write("###")
 
+    with st.container(border=True):
+        proj1.video("DATA_PROJECT.mp4")
+        proj1.caption("Data analysis app")
+        proj1.write("###")
+        link5 = '[:trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code](https://dataproject.streamlit.app/)'
+        proj2.markdown(link5, unsafe_allow_html=True )
+        proj2.markdown("I developed a tool capable of performing descriptive analysis of uploaded data. you just have to upload your data and the app will analyse your data for you with a single click ")
+        proj2.write("###")
+        proj2.write("###")
+        proj2.write("###")
+        
+    with st.container():
+        proj1.video("legends.mp4")
+        proj1.caption("Graphic designs collection")
+        link6 = '[:trophy: **MY GRAPHIC DESIGNS COLLECTION** - some of my graphic designs from different times](https://tally.so/r/n0dEVQ)'
+        proj2.markdown(link6, unsafe_allow_html=True)
+        proj2.markdown("check out my art portfolio to and view my graphic designs collection over the years")
 
 st.write("---")
 
 
-
 #----------------FOOTER----------------------------------
-st.header("**REFERENCES**")
+col10, col11 = st.columns([2,5])
+col11.header("**REFERENCES**")
 
 cols1, cols2 = st.columns(2)
 
