@@ -189,7 +189,7 @@ c1, c2, c3 = st.columns(3)
 
 c1.metric(label="Completed", value="5", delta="1")
 c2.metric(label="Currently Working on", value="2", delta="1")
-c3.metric(label="Declined", value="0", delta="0")
+c3.metric(label="Declined", value="0", delta="-1")
 
 #style_metric_cards(border_left_color="#1E1E1E")
 
