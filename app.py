@@ -11,7 +11,7 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.set_page_config(
-    page_title="CV",
+    page_title="JOHN NDELEMBI",
     page_icon=":brain:",
     )
 
@@ -19,7 +19,7 @@ st.set_page_config(
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("headphone.jpg")
+background-image: url("https://images.unsplash.com/photo-1519865885898-a54a6f2c7eea?q=80&w=1516&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
 }
 
 [data-testid="stHeader"] {
