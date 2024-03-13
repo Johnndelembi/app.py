@@ -199,7 +199,7 @@ with st.expander("PROJECTS AND ACCOMPLISHMENTS"):
 
     with st.container():
         proj1.video("academic.webm")  
-        proj1.caption("Academic results analysis")
+        proj1.caption("Academic results analysis and data analysis app")
         proj1.write("###") 
         proj1.write("###")
         link4 = '[:trophy: **ACADEMIC RESULTS DASHBOARD** - Comparing Performances, relationships and causality across different subjects](https://dataproject.streamlit.app/)'
@@ -210,8 +210,6 @@ with st.expander("PROJECTS AND ACCOMPLISHMENTS"):
         proj2.write("###")
 
     with st.container(border=True):
-        proj1.video("DATA_PROJECT.mp4")
-        proj1.caption("Data analysis app")
         proj1.write("###")
         link5 = '[:trophy: **DATA ANALYSIS APP** - created a tool capable of providing descriptive analysis of a dataframe regardless of size using python code](https://dataproject.streamlit.app/)'
         proj2.markdown(link5, unsafe_allow_html=True )
